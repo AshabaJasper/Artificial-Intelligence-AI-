@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Day <= 3.0\ngini = 0.496\nsamples = 11\nvalue = [5, 6]\nclass = Yes", fillcolor="#deeffb"] ;
+1 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = No", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Day <= 7.5\ngini = 0.444\nsamples = 9\nvalue = [3, 6]\nclass = Yes", fillcolor="#9ccef2"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = Yes", fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label="Wind <= 0.5\ngini = 0.5\nsamples = 6\nvalue = [3, 3]\nclass = No", fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = No", fillcolor="#e58139"] ;
+4 -> 5 ;
+6 [label="Day <= 13.0\ngini = 0.375\nsamples = 4\nvalue = [1, 3]\nclass = Yes", fillcolor="#7bbeee"] ;
+4 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = Yes", fillcolor="#399de5"] ;
+6 -> 7 ;
+8 [label="Day <= 15.0\ngini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = No", fillcolor="#ffffff"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = No", fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Yes", fillcolor="#399de5"] ;
+8 -> 10 ;
+}
